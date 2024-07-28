@@ -1,0 +1,38 @@
+
+.watch{
+  margin: 1%;
+  color: #863be7;
+  text-align: center;
+  font-weight: 600;
+}
+.both{
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+  padding-left: 2%;
+}
+.add{
+  font-size: 0.8rem;
+}
+.blanktext{
+  margin: 2%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.movie {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 20%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.watchlist{
+    color: #000000;
+    margin: 0;
+  padding: 0;
+}

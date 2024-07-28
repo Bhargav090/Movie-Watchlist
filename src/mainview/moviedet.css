@@ -1,0 +1,22 @@
+
+.movie-details{
+    display: flex;
+    gap: 3%;
+    margin: 4%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.btn:hover{
+    background-color: #5c07a7;
+}
+.imgg{
+    border-radius: 4px;
+}
+.plot{
+    margin-top: 3%;
+    line-height: 2rem;
+}

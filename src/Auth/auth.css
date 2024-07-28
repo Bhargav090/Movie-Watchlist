@@ -1,0 +1,137 @@
+.name {
+  font-size: 2rem;
+  font-weight: bold; 
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.second {
+  margin-left: 12%;
+  font-size: 1.3rem;
+  margin-top: 0.5%;
+}
+
+
+/* Background */
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: fadeInOut 20s infinite;
+}
+
+.bg-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadeInOut {
+  0%, 50% { opacity: 0; }
+  3%, 14% { opacity: 1; }
+}
+
+.bg-image:nth-child(1) { animation-delay: 0s; }
+.bg-image:nth-child(2) { animation-delay: 3.5s; }
+.bg-image:nth-child(3) { animation-delay: 7s; }
+.bg-image:nth-child(4) { animation-delay: 10.5s; }
+.bg-image:nth-child(5) { animation-delay: 14s; }
+.bg-image:nth-child(6) { animation-delay: 17s; }
+.bg-image:nth-child(7) { animation-delay: 20s; }
+
+/* Form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+  margin-bottom: 1%;
+  color: #863be7;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form label {
+  margin: 10px 0 5px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.form input[type="submit"] {
+  background-color: #863be7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #5c07a7;
+}
+
+.togglem{
+  color: white;
+}
+.toggle{
+  color: #863be7;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 80%;
+  }
+}

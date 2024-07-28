@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    margin: 1%;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+}
+.cine {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+.curate {
+    color: #863be7;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.namee{
+    color: #863be7;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.welcome{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: #863be7;
+    text-decoration: underline;
+}
