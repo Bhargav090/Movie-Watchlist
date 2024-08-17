@@ -19,11 +19,11 @@ const MovieSearch = () => {
     const fetchAvengersData = async () => {
       try {
         const response = await axios.get(
-          `http://www.omdbapi.com/?s=avengers&apikey=${API_KEY}`
+          `https://www.omdbapi.com/?s=avengers&apikey=${API_KEY}`
         );
         const movieDetailsPromises = response.data.Search.map((movie) =>
           axios.get(
-            `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
+            `https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
           )
         );
         const movieDetailsResponses = await Promise.all(movieDetailsPromises);
@@ -36,11 +36,11 @@ const MovieSearch = () => {
     const fetchBoysData = async () => {
       try {
         const response = await axios.get(
-          `http://www.omdbapi.com/?s=superman&apikey=${API_KEY}`
+          `https://www.omdbapi.com/?s=superman&apikey=${API_KEY}`
         );
         const movieDetailsPromises = response.data.Search.map((movie) =>
           axios.get(
-            `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
+            `https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
           )
         );
         const movieDetailsResponses = await Promise.all(movieDetailsPromises);
@@ -53,11 +53,11 @@ const MovieSearch = () => {
     const fetchHorror = async () => {
       try {
         const response = await axios.get(
-          `http://www.omdbapi.com/?s=conjuring&apikey=${API_KEY}`
+          `https://www.omdbapi.com/?s=conjuring&apikey=${API_KEY}`
         );
         const movieDetailsPromises = response.data.Search.map((movie) =>
           axios.get(
-            `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
+            `https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
           )
         );
         const movieDetailsResponses = await Promise.all(movieDetailsPromises);
@@ -77,11 +77,11 @@ const MovieSearch = () => {
     if (!query) return;
     try {
       const response = await axios.get(
-        `http://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`
+        `https://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`
       );
       const movieDetailsPromises = response.data.Search.map((movie) =>
         axios.get(
-          `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
+          `https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
         )
       );
       const movieDetailsResponses = await Promise.all(movieDetailsPromises);
